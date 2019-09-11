@@ -1,4 +1,5 @@
 import React from 'react';
+import './Pokemon.css';
 
 class Pokemon extends React.Component {
     render() {
@@ -9,7 +10,7 @@ class Pokemon extends React.Component {
         <ul className="pokemon__types">
           {this.props.types.map((type, typeIndex) => {
             return (
-              <li className={`type ${typeIndex}`} key={typeIndex}>
+              <li className={`type type${typeIndex}`} key={typeIndex}>
                 <p className="type">{type}</p> 
               </li>
             );
